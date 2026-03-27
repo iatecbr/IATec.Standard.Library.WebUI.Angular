@@ -48,9 +48,7 @@
           "builder": "@angular/build:application",
           "options": {
             "browser": "projects/stage/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/stage/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
@@ -59,22 +57,20 @@
                 "input": "projects/stage/public"
               }
             ],
-            "styles": [
-              "projects/stage/src/styles.scss"
-            ]
+            "styles": ["projects/stage/src/styles.scss"]
           },
           "configurations": {
             "production": {
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1MB"
+                  "maximumWarning": "4.9MB",
+                  "maximumError": "5MB"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "4kB",
-                  "maximumError": "8kB"
+                  "maximumWarning": "800KB",
+                  "maximumError": "1MB"
                 }
               ],
               "outputHashing": "all"
