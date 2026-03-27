@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Dashboards",
+    "icon": "pi pi-home",
+    "routerLink": [
+      "/"
+    ]
+  },
+  {
+    "label": "Examples",
+    "icon": "pi pi-palette",
+    "items": [
+      {
+        "label": "Empty Page",
+        "icon": "fa-duotone fa-solid fa-page",
+        "routerLink": [
+          "/examples/pages/empty"
+        ]
+      },
+      {
+        "label": "Header Page",
+        "icon": "fa-duotone fa-solid fa-page",
+        "routerLink": [
+          "/examples/pages/header"
+        ]
+      }
+    ]
+  }
+]
