@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 import { NephosTemplateComponent } from './templates/nephos/component/nephos-template.component';
 import { provideTranslocoScope } from '@jsverse/transloco';
-import { exampleCoreTranslationLoader } from '@services/example';
+import { exampleTranslationLoader } from '@services/example';
 
 export const routes: Routes = [
     {
@@ -10,8 +10,8 @@ export const routes: Routes = [
         loadChildren: () => import('@services/example').then((m) => m.routes),
         providers: [
             provideTranslocoScope({
-                scope: 'example',
-                loader: exampleCoreTranslationLoader,
+                scope: 'exampleScope',
+                loader: exampleTranslationLoader,
             }),
         ],
     },
